@@ -1,10 +1,15 @@
+import ApolloWrapper from './ApolloWrapper'
 import {ReactNode} from 'react'
 export default function(props : Readonly<{
-  children: ReactNode
+  children : ReactNode
 }>) {
   return (
     <html lang="en">
-      <body>{props.children}</body>
+      <body>
+        <ApolloWrapper>
+          {props.children}
+        </ApolloWrapper>
+      </body>
     </html>
   )
 }
