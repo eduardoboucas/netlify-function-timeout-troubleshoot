@@ -1,5 +1,5 @@
-import ApolloWrapper from './ApolloWrapper.tsx'
-import Component from './component.tsx'
+import ApolloWrapper from './ApolloWrapper'
+import Component from './component'
 import {Suspense} from 'react'
 export default function() {
   return (
